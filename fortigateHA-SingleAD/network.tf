@@ -62,10 +62,10 @@ resource "oci_core_security_list" "mgmt_security_list" {
     source    = "0.0.0.0/0"
     stateless = false
 
-    tcp_options {
-      "min" = 80
-      "max" = 80
-    }
+//    tcp_options {
+//     "min" = 80
+//      "max" = 80
+//    }
   }
 
   // allow inbound http (port 443) traffic
