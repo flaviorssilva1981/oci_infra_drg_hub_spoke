@@ -76,7 +76,7 @@ resource "oci_core_public_ip" "untrust_public_ip" {
 }
 
 resource "oci_core_vnic_attachment" "vnic_attach_trust_a" {
-  depends_on = ["oci_core_vnic_attachment.vnic_attach_untrust_a"]
+  //  depends_on = ["oci_core_vnic_attachment.vnic_attach_untrust_a"]
   instance_id  = "${oci_core_instance.vm-a.id}"
   display_name = "vnic_trust"
 

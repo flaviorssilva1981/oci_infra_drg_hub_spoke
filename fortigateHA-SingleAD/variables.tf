@@ -103,7 +103,7 @@ variable "hb_private_ip_primary_b" {
 // }
 
 variable "vm_image_ocid" {
-  type = "map"
+//  type = "map"
 
   default = {
     // See https://docs.us-phoenix-1.oraclecloud.com/images/

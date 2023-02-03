@@ -86,10 +86,10 @@ resource "oci_core_security_list" "mgmt_security_list" {
     source    = "0.0.0.0/0"
     stateless = false
 
-    tcp_options {
-      "min" = 5901
-      "max" = 5901
-    }
+ //   tcp_options {
+ //     "min" = 5901
+ //     "max" = 5901
+ //   }
   }
 
   // allow inbound ssh traffic
