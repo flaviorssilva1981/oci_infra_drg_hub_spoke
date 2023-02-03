@@ -42,7 +42,7 @@ resource "oci_core_instance" "vm-a" {
 }
 
 resource "oci_core_vnic_attachment" "vnic_attach_untrust_a" {
-  depends_on = ["oci_core_instance.vm-a"]
+//  depends_on = ["oci_core_instance.vm-a"]
   instance_id  = "${oci_core_instance.vm-a.id}"
   display_name = "vnic_untrust_a"
 
