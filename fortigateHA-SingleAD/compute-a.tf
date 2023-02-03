@@ -101,7 +101,7 @@ resource "oci_core_private_ip" "trust_private_ip" {
 
 
 resource "oci_core_vnic_attachment" "vnic_attach_hb_a" {
-  depends_on = ["oci_core_vnic_attachment.vnic_attach_trust_a"]
+//  depends_on = ["oci_core_vnic_attachment.vnic_attach_trust_a"]
   instance_id  = "${oci_core_instance.vm-a.id}"
   display_name = "vnic_hb_a"
 
